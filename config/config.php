@@ -1,7 +1,8 @@
 <?php
 #Arquivos diretorios raizes
 $pastaInterna = "";
-define('DIRPAGE',"http://{$_SERVER['HTTP_HOST']}/{$pastaInterna}");
+// define('DIRPAGE',"http://{$_SERVER['HTTP_HOST']}/{$pastaInterna}");
+define('DIRPAGE',"http://localhost/php/webdesig-foco-mvc/{$pastaInterna}");
 
 
 //if(substr($_SERVER['DOCUMENT_ROOT'],-1) == '/'){ define('DIRREQ',"{$_SERVER['DOCUMENT_ROOT']}{$pastaInterna}"); }else{ define('DIRREQ',"{$_SERVER['DOCUMENT_ROOT']}/{$pastaInterna}"); }
@@ -10,9 +11,9 @@ if(substr($dir ,-1) == '/'){ define('DIRREQ',"{$dir}{$pastaInterna}"); }else{ de
 
 //var_dump(dirname(__DIR__));
 #diretorios especificos
-define('DIRIMG',DIRPAGE."assets/img/");
-define('DIRCSS',DIRPAGE."assets/css/");
-define('DIRJS',DIRPAGE."assets/js/");
+define('DIRIMG',DIRPAGE."public/assets/img/");
+define('DIRCSS',DIRPAGE."public/assets/css/");
+define('DIRJS',DIRPAGE."public/assets/js/");
 
 #banco dados
 define('HOST', "localhost");

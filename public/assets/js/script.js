@@ -30,9 +30,9 @@ $(document).ready(function () {
 
     $('.image-edit').on('click', function () {
         let id = $(this).attr('rel');
-        var data = new FormData();
-        data.append( "id", id );
 
+        var data = new FormData();
+        data.append("id", id);
 
         fetch(DIRPAGE + 'update', {
             method: 'POST',
